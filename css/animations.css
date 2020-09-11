@@ -93,12 +93,6 @@ animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
 animation-fill-mode: both;
 }
 
-.wallpaper,
-.picture-shadow,
-.picture-image {
-  opacity: 0;
-}
-
 .picture-shadow,
 .picture-image {
   animation-duration: 750ms;
@@ -113,7 +107,9 @@ animation-fill-mode: both;
 }
 
 .wallpaper {
+  animation-name: zoomOut;
   animation-timing-function: ease-out;
+  animation-delay: 1s;
 }
 
 .name {
@@ -136,11 +132,11 @@ animation-fill-mode: both;
   animation-delay: 400ms;
 }
 
-.picture.is-loaded .picture-shadow {
+.picture-shadow {
   animation-name: picShadow;
 }
 
-.picture.is-loaded .picture-image {
+.picture-image {
   animation-name: picImage;
 }
 
@@ -155,9 +151,4 @@ animation-fill-mode: both;
 
 .social li:nth-child(2) {
   animation-delay: 900ms;
-}
-
-.wallpaper.is-loaded {
-  animation-delay: 1s;
-  animation-name: zoomOut;
 }
