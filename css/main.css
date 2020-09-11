@@ -9,10 +9,29 @@
   font-style: normal;
 }
 
+:root {
+  /* --bg-color: #5f45bb;
+  --linear-bg-from: #180cac;
+  --linear-bg-to: #d054e4;
+  --text-color: #fff;
+  --job-color: #ffe479;
+  --hr-color: #ff470f;
+  --button-color: #9013fe; */
+
+  /* Alternative color scheme */
+  --bg-color: #1d5244;
+  --linear-bg-from: #183308;
+  --linear-bg-to: #1b5ac0;
+  --text-color: #ffffff;
+  --job-color: #ffee00;
+  --hr-color: #a1eafb;
+  --button-color: #1f4906;
+}
+
 html {
-  background-color: #5f45bb;
-  background-image: linear-gradient(to bottom right, #180cac, #d054e4);
-  color: #fff;
+  background-color: var(--bg-color);
+  background-image: linear-gradient(to bottom right, var(--linear-bg-from), var(--linear-bg-to));
+  color: var(--text-color);
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -87,6 +106,7 @@ a {
 .picture-shadow {
   border-radius: 19980206px;
   background-image: radial-gradient(#000, 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
   top: 10%;
 }
 
@@ -102,12 +122,12 @@ a {
 }
 
 .job {
-  color: #ffe479;
+  color: var(--job-color);
   font-size: 0.75rem;
 }
 
 .hr {
-  background-color: #ff470f;
+  background-color: var(--hr-color);
   border: none;
   content: "";
   height: 1px;
@@ -131,7 +151,7 @@ a {
   background-color: #fff;
   border-radius: 19980206px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #9013fe;
+  color: var(--button-color);
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
