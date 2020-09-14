@@ -19,7 +19,7 @@
   --button-color: #9013fe; */
 
   /* Alternative color scheme */
-  --bg-color: #1d5244;
+  --bg-color: #1d3252;
   --linear-bg-from: #183308;
   --linear-bg-to: #1b5ac0;
   --text-color: #ffffff;
@@ -242,6 +242,10 @@ a {
   .side {
     margin-bottom: 3rem;
     width: 100%
+  }
+
+  .description {
+    font-size: 1.3rem;
   }
 }
 
